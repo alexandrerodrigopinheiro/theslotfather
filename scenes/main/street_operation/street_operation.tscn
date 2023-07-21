@@ -1,0 +1,47 @@
+[gd_scene load_steps=12 format=3 uid="uid://byfy4tklkf7mj"]
+
+[ext_resource type="Texture2D" uid="uid://cmhav8ayhwsqh" path="res://assets/images/main/street_operation/background.jpg" id="1_6fxah"]
+[ext_resource type="Script" path="res://scenes/main/street_operation/street_operation.gd" id="1_y01uy"]
+[ext_resource type="PackedScene" uid="uid://ct3iccowwluld" path="res://scenes/main/street_operation/glow_trail/glow_trail.tscn" id="4_ippef"]
+[ext_resource type="PackedScene" uid="uid://c4ky46p344vxl" path="res://scenes/main/street_operation/buildings/building_bar.tscn" id="5_2c1lo"]
+[ext_resource type="PackedScene" uid="uid://ck1uvr8n3444c" path="res://scenes/main/street_operation/arrows/arrows.tscn" id="5_40887"]
+[ext_resource type="PackedScene" uid="uid://bbue2qc8yryft" path="res://scenes/main/street_operation/buildings/building_liquor_mart.tscn" id="5_fbidr"]
+[ext_resource type="PackedScene" uid="uid://ddia7oy8bj7q4" path="res://scenes/main/street_operation/buildings/building_club.tscn" id="5_fl8xm"]
+[ext_resource type="PackedScene" uid="uid://parvq5nv4l86" path="res://scenes/main/street_operation/buildings/building_restaurant.tscn" id="5_qj8xx"]
+[ext_resource type="PackedScene" uid="uid://msjcj6sn04hb" path="res://scenes/main/street_operation/buildings/building_cigars.tscn" id="6_ccmmg"]
+[ext_resource type="PackedScene" uid="uid://cnthn81r1r80w" path="res://scenes/main/street_operation/buildings/building_casino.tscn" id="6_q8lgt"]
+[ext_resource type="PackedScene" uid="uid://c240ivhmvy12t" path="res://scenes/main/street_operation/dialog/dialog.tscn" id="11_4xjl1"]
+
+[node name="StreetOperation" type="Node2D"]
+script = ExtResource("1_y01uy")
+metadata/_edit_lock_ = true
+
+[node name="Background" type="TextureRect" parent="."]
+offset_right = 800.0
+offset_bottom = 600.0
+texture = ExtResource("1_6fxah")
+metadata/_edit_lock_ = true
+
+[node name="GlowTrail" parent="." instance=ExtResource("4_ippef")]
+
+[node name="Arrows" parent="." instance=ExtResource("5_40887")]
+
+[node name="BuildingClub" parent="." instance=ExtResource("5_fl8xm")]
+position = Vector2(98, 281.8)
+
+[node name="BuildingCigars" parent="." instance=ExtResource("6_ccmmg")]
+position = Vector2(226.5, 277.5)
+
+[node name="BuildingRestaurant" parent="." instance=ExtResource("5_qj8xx")]
+position = Vector2(352, 311)
+
+[node name="BuildingLiquorMart" parent="." instance=ExtResource("5_fbidr")]
+position = Vector2(428, 319)
+
+[node name="BuildingCasino" parent="." instance=ExtResource("6_q8lgt")]
+position = Vector2(558.5, 265.5)
+
+[node name="BuildingBar" parent="." instance=ExtResource("5_2c1lo")]
+position = Vector2(711.5, 309.5)
+
+[node name="Dialog" parent="." instance=ExtResource("11_4xjl1")]

@@ -1,0 +1,11 @@
+[gd_scene load_steps=3 format=3 uid="uid://dlhbn2yvj3g0l"]
+
+[ext_resource type="PackedScene" uid="uid://byfy4tklkf7mj" path="res://scenes/main/street_operation/street_operation.tscn" id="1_7kqg4"]
+[ext_resource type="PackedScene" uid="uid://cva0q4ok6gkcj" path="res://scenes/main/conference_table/conference_table.tscn" id="2_kwnnw"]
+
+[node name="Main" type="Node2D"]
+
+[node name="StreetOperation" parent="." instance=ExtResource("1_7kqg4")]
+
+[node name="ConferenceTable" parent="." instance=ExtResource("2_kwnnw")]
+visible = false

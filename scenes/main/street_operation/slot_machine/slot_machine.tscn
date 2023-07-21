@@ -1,0 +1,309 @@
+[gd_scene load_steps=68 format=3 uid="uid://cjx0oh2m48fvt"]
+
+[ext_resource type="Script" path="res://scenes/main/street_operation/slot_machine/slot_machine.gd" id="1_w0aa0"]
+[ext_resource type="Texture2D" uid="uid://0iw7dkoys8ex" path="res://assets/images/main/street_operation/slotmachine/spin/01.png" id="2_3s7xy"]
+[ext_resource type="Texture2D" uid="uid://c3628cb4glct5" path="res://assets/images/main/street_operation/slotmachine/spin/02.png" id="3_t36q8"]
+[ext_resource type="Texture2D" uid="uid://c5fx5fxm17k63" path="res://assets/images/main/street_operation/slotmachine/spin/03.png" id="4_c0lc7"]
+[ext_resource type="Texture2D" uid="uid://b3n4a6h8xq4p0" path="res://assets/images/main/street_operation/slotmachine/spin/04.png" id="5_5cmyt"]
+[ext_resource type="Texture2D" uid="uid://cdp61a47yqjyf" path="res://assets/images/main/street_operation/slotmachine/spin/05.png" id="6_upb4v"]
+[ext_resource type="Texture2D" uid="uid://dkne8ki1iecy4" path="res://assets/images/main/street_operation/slotmachine/spin/06.png" id="7_g5g4p"]
+[ext_resource type="Texture2D" uid="uid://cfq7784fvc2t4" path="res://assets/images/main/street_operation/slotmachine/spin/07.png" id="8_6dh77"]
+[ext_resource type="Texture2D" uid="uid://cp3m4em4pxhmi" path="res://assets/images/main/street_operation/slotmachine/spin/08.png" id="9_0al8v"]
+[ext_resource type="Texture2D" uid="uid://dyku4r4klejnc" path="res://assets/images/main/street_operation/slotmachine/spin/09.png" id="10_wex3p"]
+[ext_resource type="Texture2D" uid="uid://d1155l864brer" path="res://assets/images/main/street_operation/slotmachine/spin/10.png" id="11_60hqs"]
+[ext_resource type="Texture2D" uid="uid://do7l4423dr620" path="res://assets/images/main/street_operation/slotmachine/spin/11.png" id="12_7rc6f"]
+[ext_resource type="Texture2D" uid="uid://c2vs13s8q0vap" path="res://assets/images/main/street_operation/slotmachine/spin/12.png" id="13_buapn"]
+[ext_resource type="Texture2D" uid="uid://5qdjw5f5ithr" path="res://assets/images/main/street_operation/slotmachine/spin/13.png" id="14_n3vd4"]
+[ext_resource type="Texture2D" uid="uid://ckwqtv221vplh" path="res://assets/images/main/street_operation/slotmachine/spin/14.png" id="15_0qv0d"]
+[ext_resource type="Texture2D" uid="uid://d4njkcnj707bd" path="res://assets/images/main/street_operation/slotmachine/spin/15.png" id="16_cwda1"]
+[ext_resource type="Texture2D" uid="uid://rahwxr8reu6n" path="res://assets/images/main/street_operation/slotmachine/spin/16.png" id="17_57y2s"]
+[ext_resource type="Texture2D" uid="uid://ca3kgbafq5k6e" path="res://assets/images/main/street_operation/slotmachine/spin/17.png" id="18_82scw"]
+[ext_resource type="Texture2D" uid="uid://dg6arfqbb5ygo" path="res://assets/images/main/street_operation/slotmachine/spin/18.png" id="19_msxod"]
+[ext_resource type="Texture2D" uid="uid://b8i3qg1ohc2pj" path="res://assets/images/main/street_operation/slotmachine/spin/19.png" id="20_qyqvq"]
+[ext_resource type="Texture2D" uid="uid://dta2bhexyr15v" path="res://assets/images/main/street_operation/slotmachine/spin/20.png" id="21_cqou4"]
+[ext_resource type="Texture2D" uid="uid://5i8f16sggvwd" path="res://assets/images/main/street_operation/slotmachine/spin/21.png" id="22_vj6t2"]
+[ext_resource type="Texture2D" uid="uid://t1ukgnj0xfy1" path="res://assets/images/main/street_operation/slotmachine/spin/22.png" id="23_25147"]
+[ext_resource type="Texture2D" uid="uid://cqebyblsdf6yt" path="res://assets/images/main/street_operation/slotmachine/spin/23.png" id="24_xv5ht"]
+[ext_resource type="Texture2D" uid="uid://hqscyuhftqwp" path="res://assets/images/main/street_operation/slotmachine/spin/24.png" id="25_3smmb"]
+[ext_resource type="Texture2D" uid="uid://cu21gr2ajisaq" path="res://assets/images/main/street_operation/slotmachine/spin/25.png" id="26_r0sk8"]
+[ext_resource type="Texture2D" uid="uid://ddkg72x66gyp3" path="res://assets/images/main/street_operation/slotmachine/spin/26.png" id="27_pnyok"]
+[ext_resource type="Texture2D" uid="uid://x7xlca3dncoj" path="res://assets/images/main/street_operation/slotmachine/coins/01.png" id="28_pjqao"]
+[ext_resource type="Texture2D" uid="uid://7jcc5acnegup" path="res://assets/images/main/street_operation/slotmachine/coins/02.png" id="29_mgdmw"]
+[ext_resource type="Texture2D" uid="uid://c56mgny2annmr" path="res://assets/images/main/street_operation/slotmachine/coins/03.png" id="30_f8fou"]
+[ext_resource type="Texture2D" uid="uid://dlwdimynf6qcm" path="res://assets/images/main/street_operation/slotmachine/coins/04.png" id="31_p6lbp"]
+[ext_resource type="Texture2D" uid="uid://b4ued1qr3ylw0" path="res://assets/images/main/street_operation/slotmachine/coins/05.png" id="32_hs364"]
+[ext_resource type="Texture2D" uid="uid://ci2jfad348fku" path="res://assets/images/main/street_operation/slotmachine/coins/06.png" id="33_qiypp"]
+[ext_resource type="Texture2D" uid="uid://d2bvjo78svkya" path="res://assets/images/main/street_operation/slotmachine/coins/07.png" id="34_nr3lo"]
+[ext_resource type="Texture2D" uid="uid://bynpkd6ym72s" path="res://assets/images/main/street_operation/slotmachine/coins/08.png" id="35_ibsie"]
+[ext_resource type="Texture2D" uid="uid://cm3fp27ph481y" path="res://assets/images/main/street_operation/slotmachine/coins/09.png" id="36_pledw"]
+[ext_resource type="Texture2D" uid="uid://b7g64pvxyqvy5" path="res://assets/images/main/street_operation/slotmachine/coins/10.png" id="37_qhngw"]
+[ext_resource type="Texture2D" uid="uid://dq6ojtjvpblr3" path="res://assets/images/main/street_operation/slotmachine/coins/11.png" id="38_32jre"]
+[ext_resource type="Texture2D" uid="uid://dfuhftaoq6d7p" path="res://assets/images/main/street_operation/slotmachine/coins/12.png" id="39_n2an6"]
+[ext_resource type="Texture2D" uid="uid://dujqy0fbulxe" path="res://assets/images/main/street_operation/slotmachine/coins/13.png" id="40_cwxmm"]
+[ext_resource type="Texture2D" uid="uid://dop525mnjlid6" path="res://assets/images/main/street_operation/slotmachine/coins/14.png" id="41_5r24p"]
+[ext_resource type="Texture2D" uid="uid://b745a87f2tb54" path="res://assets/images/main/street_operation/slotmachine/coins/15.png" id="42_kn8es"]
+[ext_resource type="Texture2D" uid="uid://cjdk1m6cwa2ci" path="res://assets/images/main/street_operation/slotmachine/coins/16.png" id="43_1ahb7"]
+[ext_resource type="Texture2D" uid="uid://bv024i2n3w8o3" path="res://assets/images/main/street_operation/slotmachine/coins/17.png" id="44_ha4gn"]
+[ext_resource type="Texture2D" uid="uid://b3gadvq7axiff" path="res://assets/images/main/street_operation/slotmachine/coins/18.png" id="45_4r2bu"]
+[ext_resource type="Texture2D" uid="uid://bbfwevopnin5j" path="res://assets/images/main/street_operation/slotmachine/coins/19.png" id="46_psdrg"]
+[ext_resource type="Texture2D" uid="uid://cysdtyj87db8q" path="res://assets/images/main/street_operation/slotmachine/coins/20.png" id="47_jx12m"]
+[ext_resource type="Texture2D" uid="uid://f1fvwfvfxckf" path="res://assets/images/main/street_operation/slotmachine/coins/21.png" id="48_wq7uf"]
+[ext_resource type="Texture2D" uid="uid://bcl1b60rvr7lf" path="res://assets/images/main/street_operation/slotmachine/coins/22.png" id="49_k1oq1"]
+[ext_resource type="Texture2D" uid="uid://d1ru7asmuvflr" path="res://assets/images/main/street_operation/slotmachine/coins/23.png" id="50_1qvgr"]
+[ext_resource type="Texture2D" uid="uid://ddvgc8ks4re47" path="res://assets/images/main/street_operation/slotmachine/coins/24.png" id="51_kn226"]
+[ext_resource type="Texture2D" uid="uid://dx386xsf1mu1h" path="res://assets/images/main/street_operation/slotmachine/coins/25.png" id="52_cx4es"]
+[ext_resource type="Texture2D" uid="uid://858bhm02iw3y" path="res://assets/images/main/street_operation/slotmachine/coins/26.png" id="53_2gp3w"]
+[ext_resource type="Texture2D" uid="uid://cn7qrp7mk7on5" path="res://assets/images/main/street_operation/slotmachine/coins/27.png" id="54_6xmwe"]
+[ext_resource type="Texture2D" uid="uid://dtk76c0srerpj" path="res://assets/images/main/street_operation/slotmachine/coins/28.png" id="55_l33ij"]
+[ext_resource type="Texture2D" uid="uid://bs6pa2ho12tgj" path="res://assets/images/main/street_operation/slotmachine/coins/29.png" id="56_gym6s"]
+[ext_resource type="Texture2D" uid="uid://bcnepe3nyjgwm" path="res://assets/images/main/street_operation/slotmachine/coins/30.png" id="57_mvsev"]
+[ext_resource type="Texture2D" uid="uid://bmjmxi0mxxyhj" path="res://assets/images/main/street_operation/slotmachine/coins/31.png" id="58_ri3ic"]
+[ext_resource type="Texture2D" uid="uid://d31id44knonmm" path="res://assets/images/main/street_operation/slotmachine/coins/32.png" id="59_hq34s"]
+[ext_resource type="Texture2D" uid="uid://binnhh76txc55" path="res://assets/images/main/street_operation/slotmachine/coins/33.png" id="60_glvka"]
+[ext_resource type="Texture2D" uid="uid://ck4acqp3c1v0" path="res://assets/images/main/street_operation/slotmachine/coins/34.png" id="61_tefkm"]
+[ext_resource type="Texture2D" uid="uid://b8l7u2l8q1og6" path="res://assets/images/main/street_operation/slotmachine/coins/35.png" id="62_yp6wi"]
+[ext_resource type="Texture2D" uid="uid://blmwlpihea6xy" path="res://assets/images/main/street_operation/slotmachine/coins/36.png" id="63_11os0"]
+[ext_resource type="Texture2D" uid="uid://bfabs6ybbsynq" path="res://assets/images/main/street_operation/slotmachine/coins/37.png" id="64_81rmf"]
+[ext_resource type="Texture2D" uid="uid://dij6xlwcadgwu" path="res://assets/images/main/street_operation/slotmachine/coins/38.png" id="65_aapxs"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_mj8ny"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_3s7xy")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_3s7xy")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_3s7xy")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_3s7xy")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_3s7xy")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_3s7xy")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_t36q8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_c0lc7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_5cmyt")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_upb4v")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_g5g4p")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_6dh77")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_0al8v")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_wex3p")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_60hqs")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_7rc6f")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_buapn")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14_n3vd4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("15_0qv0d")
+}, {
+"duration": 1.0,
+"texture": ExtResource("16_cwda1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("17_57y2s")
+}, {
+"duration": 1.0,
+"texture": ExtResource("18_82scw")
+}, {
+"duration": 1.0,
+"texture": ExtResource("19_msxod")
+}, {
+"duration": 1.0,
+"texture": ExtResource("20_qyqvq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("21_cqou4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("22_vj6t2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("23_25147")
+}, {
+"duration": 1.0,
+"texture": ExtResource("24_xv5ht")
+}, {
+"duration": 1.0,
+"texture": ExtResource("25_3smmb")
+}, {
+"duration": 1.0,
+"texture": ExtResource("26_r0sk8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("27_pnyok")
+}, {
+"duration": 1.0,
+"texture": null
+}],
+"loop": false,
+"name": &"default",
+"speed": 20.0
+}]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_nur8q"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("28_pjqao")
+}, {
+"duration": 1.0,
+"texture": ExtResource("29_mgdmw")
+}, {
+"duration": 1.0,
+"texture": ExtResource("30_f8fou")
+}, {
+"duration": 1.0,
+"texture": ExtResource("31_p6lbp")
+}, {
+"duration": 1.0,
+"texture": ExtResource("32_hs364")
+}, {
+"duration": 1.0,
+"texture": ExtResource("33_qiypp")
+}, {
+"duration": 1.0,
+"texture": ExtResource("34_nr3lo")
+}, {
+"duration": 1.0,
+"texture": ExtResource("35_ibsie")
+}, {
+"duration": 1.0,
+"texture": ExtResource("36_pledw")
+}, {
+"duration": 1.0,
+"texture": ExtResource("37_qhngw")
+}, {
+"duration": 1.0,
+"texture": ExtResource("38_32jre")
+}, {
+"duration": 1.0,
+"texture": ExtResource("39_n2an6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("40_cwxmm")
+}, {
+"duration": 1.0,
+"texture": ExtResource("41_5r24p")
+}, {
+"duration": 1.0,
+"texture": ExtResource("42_kn8es")
+}, {
+"duration": 1.0,
+"texture": ExtResource("43_1ahb7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("44_ha4gn")
+}, {
+"duration": 1.0,
+"texture": ExtResource("45_4r2bu")
+}, {
+"duration": 1.0,
+"texture": ExtResource("46_psdrg")
+}, {
+"duration": 1.0,
+"texture": ExtResource("47_jx12m")
+}, {
+"duration": 1.0,
+"texture": ExtResource("48_wq7uf")
+}, {
+"duration": 1.0,
+"texture": ExtResource("49_k1oq1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("50_1qvgr")
+}, {
+"duration": 1.0,
+"texture": ExtResource("51_kn226")
+}, {
+"duration": 1.0,
+"texture": ExtResource("52_cx4es")
+}, {
+"duration": 1.0,
+"texture": ExtResource("53_2gp3w")
+}, {
+"duration": 1.0,
+"texture": ExtResource("54_6xmwe")
+}, {
+"duration": 1.0,
+"texture": ExtResource("55_l33ij")
+}, {
+"duration": 1.0,
+"texture": ExtResource("56_gym6s")
+}, {
+"duration": 1.0,
+"texture": ExtResource("57_mvsev")
+}, {
+"duration": 1.0,
+"texture": ExtResource("58_ri3ic")
+}, {
+"duration": 1.0,
+"texture": ExtResource("59_hq34s")
+}, {
+"duration": 1.0,
+"texture": ExtResource("60_glvka")
+}, {
+"duration": 1.0,
+"texture": ExtResource("61_tefkm")
+}, {
+"duration": 1.0,
+"texture": ExtResource("62_yp6wi")
+}, {
+"duration": 1.0,
+"texture": ExtResource("63_11os0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("64_81rmf")
+}, {
+"duration": 1.0,
+"texture": ExtResource("65_aapxs")
+}, {
+"duration": 1.0,
+"texture": null
+}],
+"loop": false,
+"name": &"default",
+"speed": 30.0
+}]
+
+[node name="SlotMachine" type="Node2D"]
+script = ExtResource("1_w0aa0")
+metadata/_edit_lock_ = true
+
+[node name="Skin" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_mj8ny")
+metadata/_edit_lock_ = true
+
+[node name="Coins" type="AnimatedSprite2D" parent="."]
+position = Vector2(-20, 65)
+sprite_frames = SubResource("SpriteFrames_nur8q")
+metadata/_edit_lock_ = true

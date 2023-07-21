@@ -1,0 +1,144 @@
+[gd_scene load_steps=11 format=3 uid="uid://ct3iccowwluld"]
+
+[ext_resource type="Script" path="res://scenes/main/street_operation/glow_trail/glow_trail.gd" id="1_8x0d4"]
+[ext_resource type="Texture2D" uid="uid://cmhav8ayhwsqh" path="res://assets/images/main/street_operation/background.jpg" id="1_hstkr"]
+[ext_resource type="Texture2D" uid="uid://duytmwactv3iv" path="res://assets/images/main/street_operation/buildings/stroke/1.png" id="2_hhcd8"]
+[ext_resource type="Texture2D" uid="uid://du8n0ta1pnxn8" path="res://assets/images/main/street_operation/buildings/stroke/2.png" id="3_glfwj"]
+[ext_resource type="Texture2D" uid="uid://saxi28cs31ai" path="res://assets/images/main/street_operation/buildings/stroke/3.png" id="4_jc3e0"]
+[ext_resource type="Texture2D" uid="uid://jf5xmn47rpj1" path="res://assets/images/main/street_operation/buildings/stroke/4.png" id="5_hi0w5"]
+[ext_resource type="Texture2D" uid="uid://b1ck7lm5prr0j" path="res://assets/images/main/street_operation/buildings/stroke/5.png" id="6_46q1s"]
+[ext_resource type="Texture2D" uid="uid://dxf6mdqvos73j" path="res://assets/images/main/street_operation/buildings/stroke/6.png" id="7_bb5fl"]
+
+[sub_resource type="Animation" id="Animation_5ouve"]
+resource_name = "blink"
+length = 4.0
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Glow1:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.5, 1, 1.5),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1), Color(1, 1, 1, 1), Color(1, 1, 1, 0)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Glow2:modulate")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0.5, 1, 1.5, 2),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1), Color(1, 1, 1, 1), Color(1, 1, 1, 0)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Glow3:modulate")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(1, 1.5, 2, 2.5),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1), Color(1, 1, 1, 1), Color(1, 1, 1, 0)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("Glow4:modulate")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(1.5, 2, 2.5, 3),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1), Color(1, 1, 1, 1), Color(1, 1, 1, 0)]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("Glow5:modulate")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(2, 2.5, 3, 3.5),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1), Color(1, 1, 1, 1), Color(1, 1, 1, 0)]
+}
+tracks/5/type = "value"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("Glow6:modulate")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"times": PackedFloat32Array(2.5, 3, 3.5, 4),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1), Color(1, 1, 1, 1), Color(1, 1, 1, 0)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_m5mc7"]
+_data = {
+"blink": SubResource("Animation_5ouve")
+}
+
+[node name="GlowTrail" type="Node2D"]
+script = ExtResource("1_8x0d4")
+metadata/_edit_lock_ = true
+
+[node name="Background" type="TextureRect" parent="."]
+offset_right = 800.0
+offset_bottom = 600.0
+texture = ExtResource("1_hstkr")
+metadata/_edit_lock_ = true
+
+[node name="Glow1" type="Sprite2D" parent="."]
+modulate = Color(1, 1, 1, 0)
+position = Vector2(711.5, 309.5)
+texture = ExtResource("2_hhcd8")
+metadata/_edit_lock_ = true
+
+[node name="Glow2" type="Sprite2D" parent="."]
+modulate = Color(1, 1, 1, 0)
+position = Vector2(558.5, 265.5)
+texture = ExtResource("3_glfwj")
+metadata/_edit_lock_ = true
+
+[node name="Glow3" type="Sprite2D" parent="."]
+modulate = Color(1, 1, 1, 0)
+position = Vector2(428, 319)
+texture = ExtResource("4_jc3e0")
+metadata/_edit_lock_ = true
+
+[node name="Glow4" type="Sprite2D" parent="."]
+modulate = Color(1, 1, 1, 0)
+position = Vector2(352, 311)
+texture = ExtResource("5_hi0w5")
+metadata/_edit_lock_ = true
+
+[node name="Glow5" type="Sprite2D" parent="."]
+modulate = Color(1, 1, 1, 0)
+position = Vector2(226.5, 277.5)
+texture = ExtResource("6_46q1s")
+metadata/_edit_lock_ = true
+
+[node name="Glow6" type="Sprite2D" parent="."]
+modulate = Color(1, 1, 1, 0)
+position = Vector2(98, 281.8)
+texture = ExtResource("7_bb5fl")
+metadata/_edit_lock_ = true
+
+[node name="Animations" type="AnimationPlayer" parent="."]
+autoplay = "blink"
+speed_scale = 3.5
+libraries = {
+"": SubResource("AnimationLibrary_m5mc7")
+}

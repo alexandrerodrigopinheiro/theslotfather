@@ -1,0 +1,130 @@
+[gd_scene load_steps=10 format=3 uid="uid://ck1uvr8n3444c"]
+
+[ext_resource type="Script" path="res://scenes/main/street_operation/arrows/arrows.gd" id="1_4xmho"]
+[ext_resource type="Texture2D" uid="uid://laskdplmckvw" path="res://assets/images/main/street_operation/buildings/arraws/1.png" id="2_n70fm"]
+[ext_resource type="Texture2D" uid="uid://bg76i7qee1p4y" path="res://assets/images/main/street_operation/buildings/arraws/2.png" id="3_7i3jk"]
+[ext_resource type="Texture2D" uid="uid://d3rihrsgxdod6" path="res://assets/images/main/street_operation/buildings/arraws/3.png" id="4_lkaja"]
+[ext_resource type="Texture2D" uid="uid://by0y31of4ku81" path="res://assets/images/main/street_operation/buildings/arraws/4.png" id="5_cx7pt"]
+[ext_resource type="Texture2D" uid="uid://blr130adq4kmm" path="res://assets/images/main/street_operation/buildings/arraws/5.png" id="6_g5ix6"]
+[ext_resource type="Texture2D" uid="uid://5at85pahdrqg" path="res://assets/images/main/street_operation/buildings/arraws/6.png" id="7_ya5ew"]
+
+[sub_resource type="Animation" id="Animation_pq78k"]
+resource_name = "swing"
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Array1:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(94, 329), Vector2(94, 319)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Array2:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(227, 330), Vector2(227, 320)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Array3:position")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0, 0.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(330, 359), Vector2(330, 349)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("Array4:position")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0, 0.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(422, 261), Vector2(422, 251)]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("Array5:position")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0, 0.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(551, 317), Vector2(551, 307)]
+}
+tracks/5/type = "value"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("Array6:position")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"times": PackedFloat32Array(0, 0.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(744, 332), Vector2(744, 322)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_uudo1"]
+_data = {
+"swing": SubResource("Animation_pq78k")
+}
+
+[node name="Arrows" type="Node2D"]
+script = ExtResource("1_4xmho")
+metadata/_edit_lock_ = true
+
+[node name="Array1" type="Sprite2D" parent="."]
+position = Vector2(94, 328.387)
+texture = ExtResource("2_n70fm")
+metadata/_edit_lock_ = true
+
+[node name="Array2" type="Sprite2D" parent="."]
+position = Vector2(227, 329.387)
+texture = ExtResource("3_7i3jk")
+metadata/_edit_lock_ = true
+
+[node name="Array3" type="Sprite2D" parent="."]
+position = Vector2(330, 358.387)
+texture = ExtResource("4_lkaja")
+metadata/_edit_lock_ = true
+
+[node name="Array4" type="Sprite2D" parent="."]
+position = Vector2(422, 260.387)
+texture = ExtResource("5_cx7pt")
+metadata/_edit_lock_ = true
+
+[node name="Array5" type="Sprite2D" parent="."]
+position = Vector2(551, 316.387)
+texture = ExtResource("6_g5ix6")
+metadata/_edit_lock_ = true
+
+[node name="Array6" type="Sprite2D" parent="."]
+position = Vector2(744, 331.387)
+texture = ExtResource("7_ya5ew")
+metadata/_edit_lock_ = true
+
+[node name="Animations" type="AnimationPlayer" parent="."]
+autoplay = "swing"
+libraries = {
+"": SubResource("AnimationLibrary_uudo1")
+}
